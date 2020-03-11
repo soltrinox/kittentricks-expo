@@ -4,7 +4,7 @@
     "slug": "kitten-tricks",
     "version": "2.4.0",
     "sdkVersion": "36.0.0",
-    "description": "UI Kitten Demo Application",
+    "description": "UI Kitten Demo Application on Expo 36.0.0",
     "githubUrl": "https://github.com/akveo/kittenTricks",
     "ios": {
       "bundleIdentifier": "com.akveo.kittentricks",

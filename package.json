@@ -1,35 +1,13 @@
 {
-  "name": "kitten-tricks",
-  "description": "UI Kitten Demo Application",
-  "version": "2.4.0",
-  "private": true,
-  "license": "MIT",
-  "author": "akveo <contact@akveo.com>",
-  "homepage": "https://github.com/akveo/kittenTricks#readme",
-  "repository": "git+https://github.com/akveo/kittenTricks.git",
-  "bugs": {
-    "url": "https://github.com/akveo/kittenTricks/issues"
-  },
-  "main": "./index.js",
-  "workspaces": {
-    "nohoist": [
-      "*",
-      "*/**"
-    ]
-  },
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start:expo": "npm run env -- dev && expo start",
-    "start": "npm run env -- prod && react-native start",
-    "start:dev": "npm run env -- dev && react-native start --reset-cache",
+    "start:expo": "npm run env -- prod && expo start",
     "env": "node ./env/set-env.js",
-    "build": "tsc -p ./tsconfig.json",
-    "build:web": "expo build:web",
-    "clean": "rimraf ./dist ./web-build",
-    "lint": "tslint -c ./tslint.json ./src/**/*.{ts,tsx}",
-    "changelog": "conventional-changelog -i ./CHANGELOG.md -s",
-    "postinstall": "jetify"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
   },
   "dependencies": {
     "@eva-design/eva": "^1.4.0",
@@ -78,5 +56,6 @@
     "rimraf": "^2.6.2",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
-  }
+  },
+  "private": true
 }
